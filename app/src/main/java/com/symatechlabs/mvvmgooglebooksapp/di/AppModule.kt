@@ -4,6 +4,7 @@ import android.content.Context
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.symatechlabs.mvvmgooglebooksapp.App
+import com.symatechlabs.mvvmgooglebooksapp.util.Config.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -39,7 +40,7 @@ class AppModule {
             .writeTimeout(60, TimeUnit.SECONDS)
             .build()
         return Retrofit.Builder()
-            .baseUrl("Common.BASE_URL")
+            .baseUrl(BASE_URL)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .client(okHttpClient)
             .build();

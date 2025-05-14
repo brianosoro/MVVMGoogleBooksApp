@@ -41,14 +41,14 @@ fun MyApp() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Hello from Jetpack Compose!",
+                text = "",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
             Spacer(modifier = Modifier.height(16.dp))
-            Button(onClick = { /* Handle click */ }) {
-                Text("Click Me")
+            Button(onClick = { }) {
+                Text("Button")
             }
         }
     }

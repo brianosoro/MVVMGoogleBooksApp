@@ -5,6 +5,7 @@ object Config {
         const val RESULT_CODE = 10005
         const val LOG_TAG = "MVVM_GOOGLE_BOOKS_APP";
         const val BASE_URL = "https://www.googleapis.com/";
+        const val DATABASE_NAME = "MVVM_GOOGLE_BOOKS_DB";
         const val VAL_01_INTENT_VALUE = "val_01";
         const val VAL_02_INTENT_VALUE = "val_02";
         const val VAL_03_INTENT_VALUE = "val_03";
